@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-bar input{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+.sub-nav a{
+    margin: 0 1 5px;
+    text-decoration: none;
+    color: #333;
+}
+main{
+    padding:20px;
+}
+.banner img{
+    width:100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.trending-products,.theme-categories{
+    margin-top:30px;
+}
+.product-grid,.theme-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin-top: center;
+}
+.product img,.theme img{
+    width:100%;
+    max-height:250px;
+    object-fit: cover;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    margin-top: 30px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> The Solued Store</div>
+        <div class="logo"> Women</div>
+        <div class="logo"> Men</div>
+        <div class="logo"> Kids</div>
+        <div class="search bar"> <input type="text" placeholder="Search.."></div>
+        <nav>
+            <a href="#">Categories</a>
+            <a href="#">Themes</a>
+            <a href="#">New Arrivals</a>
+        </nav>
+    </header>
+    <nav class="sub-nav">
+        <a href="#">T-Shirts</a>
+        <a href="#">Hoodies</a>
+        <a href="#">Dresses</a>
+        <a href="#">Bottoms</a>
+    </nav>
+
+    <main>
+        <section class="banner"> <img src="" alt=""></section>
+        <section class="trending-products">
+            <h2>Trending Products</h2>
+            <div class="Product-grid">
+                <div class="Product">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741358933_1028222.jpg?format=webp&w=360&dpr=1.4" alt="">
+                    <h3>Product 1</h3>
+                    <p>Price :$XX</p>
+                </div>
+                <div class="Product">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1739512994_5204844.jpg?format=webp&w=360&dpr=1.4" alt="">
+                    <h3>Product 2</h3>
+                    <p>Price :$XX</p>
+                </div>
+                <div class="Product">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741345234_2786880.jpg?format=webp&w=360&dpr=1.4" alt="">
+                    <h3>Product 3</h3>
+                    <p>Price :$XX</p>
+                </div>
+                <div class="Product">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Tshirts_copy_2_CxFs6tQ.jpg?format=webp&w=480&dpr=1.4" alt="">
+                    <h3>Product 4</h3>
+                    <p>Price :$XX</p>
+                </div>
+            </div>
+        </section>
+        <section class="theme-categories">
+            <h2>Shop By Theme</h2>
+            <div class="theme-grid">
+                <div class="theme">
+                    <img src="" alt="">
+                    <h3>Theme1</h3>
+                </div>
+                <div class="theme">
+                    <img src="" alt="">
+                    <h3>Theme2</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><p>$copy; 2024 The Souled Store</p></footer>
+</body>
+</html>
